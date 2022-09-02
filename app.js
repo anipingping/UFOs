@@ -36,16 +36,15 @@ function updateFilters() {
     // 4c. Save the id of the filter that was changed as a variable.
     let filter_id = changed_element.attr("id");
   
-    // 5. If a filter value was entered then add that filterId and value
-    // to the filters list. Otherwise, clear that filter from the filters object.
-    if ("date") {
-      filteredData = filteredData.filter(row => row.datetime === date);
-      filteredData = filteredData.filter(row => row.city === city);
-      filteredData = filteredData.filter(row) => row.state === state);
-      filteredData = filteredData.filter(row) => row.country === country);
-      filteredData = filteredData.filter(row) => row.shape === shape);
-    }
-  
+    // 5. If a filter value was entered then add that filterId and value to the filters list. Otherwise, clear that filter from the filters object.
+if (filters) {
+  changed_element = "123";
+} else if () {
+  abc = "456";
+  else {
+  abc = "789";
+  }
+}
     // 6. Call function to apply all filters and rebuild the table
     filterTable();
   
